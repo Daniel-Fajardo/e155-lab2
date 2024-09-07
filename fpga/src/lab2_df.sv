@@ -1,0 +1,112 @@
+module top(
+	input logic	mcu_blink_in,
+    input logic [3:0] s1,
+    input logic [3:0] s2,
+	output logic mcu_echo_led,
+    output logic [6:0] seg,
+    output logic anode1,
+    output logic anode2,
+    output logic [4:0] led
+);
+    logic state;
+	logic int_osc;
+	logic pulse;
+	logic led_state = 0;
+	logic [10:0] counter = 0; /* changed from 24 to 10, should change freq from 1 to 2.4 Hz*/
+	
+	// Internal high-speed oscillator
+	HSOSC hf_osc (.CLKHFPU(1'b1), .CLKHFEN(1'b1), .CLKHF(int_osc));
+	
+	// Simple clock divider
+	always_ff @(posedge int_osc)
+		begin
+			counter <= counter + 1;
+		end
+		
+
+/*  switch inputs in binary to corresponding led outputs*/
+    segmentlogic1 segmentlogic(s1[3:0], seg[6:0]);
+    segmentlogic2 segmentlogic(s2[3:0], seg[6:0]);
+    leds leds(s1[3:0], s2[3:0], led[4:0]);
+    anode chooseanode(clk, reset, anode1, anode2);
+
+//  assign led[2] = counter[10]; /* changed from 24 to 10*/
+// 	assign mcu_echo_led = mcu_blink_in;
+
+endmodule
+
+module segmentlogic(
+    input logic [3:0] s,
+    output logic [6:0] seg
+);
+    // combinational logic for 7-segment display
+    always_comb begin
+        case(s)
+            4'b0000: seg=7'b0000001;
+            4'b0001: seg=7'b1001111;
+            4'b0010: seg=7'b0010010;
+            4'b0011: seg=7'b0000110;
+            4'b0100: seg=7'b1001100;
+            4'b0101: seg=7'b0100100;
+            4'b0110: seg=7'b0100000;
+            4'b0111: seg=7'b0001111;
+            4'b1000: seg=7'b0000000;
+            4'b1001: seg=7'b0001100;
+            4'b1010: seg=7'b0001000;
+            4'b1011: seg=7'b1100000;
+            4'b1100: seg=7'b0110001;
+            4'b1101: seg=7'b1000010;
+            4'b1110: seg=7'b0110000;
+            4'b1111: seg=7'b0111000;
+            default: seg=7'b1111111;
+        endcase
+    end
+endmodule
+
+module leds(
+    input logic [3:0] s1,
+    input logic [3:0] s2,
+    output logic [4:0] led
+);
+    logic c;
+    // 4-bit adder combinational logic for leds
+    always_comb begin
+        // sum first bits
+        led[0] = s1[0]^s2[0];
+        c = s1[0]&s2[0];
+        // sum second bits and carry
+        led[1] = s1[1]^s2[1]^c;
+        c = (s1[1]&s2[1])|(s1[1]&c)|(s2[1]&c);
+        // sum third bits and carry
+        led[2] = s1[2]^s2[2]^c;
+        c = (s1[2]&s2[2])|(s1[2]&c)|(s2[2]&c);
+        // sum fourth bits and carry
+        led[3] = s1[3]^s2[3]^c;
+        c = (s1[3]&s2[3])|(s1[3]&c)|(s2[3]&c);
+        // carry is largest bit in led
+        led[4] = c;
+    end
+endmodule
+
+module chooseanode(
+    input logic clk, reset,
+    output logic anode1,
+    output logic anode2,
+);
+    // synchronous logic to alternate state to 0 or 1
+    logic state;
+    always_ff @(posedge clk, posedge reset)
+        if (reset) state = 0;
+        else if (state) state = 0;
+        else state = 1;
+
+    always_comb
+        if (state) begin
+            anode1 <= 1;
+            anode2 <= 0;
+        end
+        else begin
+            anode1 <= 0;
+            anode2 <= 1;
+        end
+endmodule
