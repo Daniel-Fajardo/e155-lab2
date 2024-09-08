@@ -2,6 +2,7 @@ module top(
 	input logic	mcu_blink_in,
     input logic [3:0] s1,
     input logic [3:0] s2,
+    input logic reset,
 	output logic mcu_echo_led,
     output logic [6:0] seg,
     output logic anode1,
@@ -9,6 +10,8 @@ module top(
     output logic [4:0] led
 );
     logic state;
+    logic clk;
+    logic reset;
 	logic int_osc;
 	logic pulse;
 	logic led_state = 0;
@@ -30,6 +33,7 @@ module top(
     leds leds(s1[3:0], s2[3:0], led[4:0]);
     anode chooseanode(clk, reset, anode1, anode2);
 
+    assign clk = counter[10];
 //  assign led[2] = counter[10]; /* changed from 24 to 10*/
 // 	assign mcu_echo_led = mcu_blink_in;
 
