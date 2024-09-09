@@ -11,7 +11,7 @@ cModel Technology
 dC:/Program Files/Modelsim/examples
 vchooseanode
 Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z1 !s110 1725855605
+Z1 !s110 1725857422
 !i10b 1
 !s100 Ckm;bMJbG5R71hEaR<]893
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -22,13 +22,13 @@ Z4 dC:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/sim
 w1725855461
 8C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/chooseanode.sv
 FC:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/chooseanode.sv
-!i122 17
+!i122 42
 L0 1 28
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1725855605.000000
+Z6 !s108 1725857421.000000
 !s107 C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/chooseanode.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/chooseanode.sv|
 !i113 1
@@ -36,7 +36,7 @@ Z7 o-work work -sv
 Z8 tCvgOpt 0
 vleds
 R0
-R1
+Z9 !s110 1725857421
 !i10b 1
 !s100 _aRI0C?A52ZjTMkUYQUBD2
 R2
@@ -47,13 +47,13 @@ R4
 w1725854305
 8C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/leds.sv
 FC:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/leds.sv
-!i122 15
+!i122 40
 L0 1 24
 R5
 r1
 !s85 0
 31
-Z9 !s108 1725855604.000000
+R6
 !s107 C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/leds.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/leds.sv|
 !i113 1
@@ -61,7 +61,7 @@ R7
 R8
 vmux
 R0
-!s110 1725855606
+R1
 !i10b 1
 !s100 5hJYQN`RmJHg0aY`6N3421
 R2
@@ -72,13 +72,13 @@ R4
 w1725855489
 8C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/mux.sv
 FC:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/mux.sv
-!i122 18
+!i122 43
 L0 1 7
 R5
 r1
 !s85 0
 31
-!s108 1725855606.000000
+!s108 1725857422.000000
 !s107 C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/mux.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/mux.sv|
 !i113 1
@@ -86,7 +86,7 @@ R7
 R8
 vsegmentlogic
 R0
-R1
+R9
 !i10b 1
 !s100 oU2i11cKQz_zX9]J>;1Ti1
 R2
@@ -97,7 +97,7 @@ R4
 w1725854267
 8C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/segmentlogic.sv
 FC:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/segmentlogic.sv
-!i122 16
+!i122 41
 L0 1 27
 R5
 r1
@@ -111,7 +111,7 @@ R7
 R8
 vtop
 R0
-!s110 1725855604
+R9
 !i10b 1
 !s100 MjlhIklGVLQhaYX[j69JA2
 R2
@@ -122,13 +122,13 @@ R4
 w1725855599
 8C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/lab2_df.sv
 FC:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/lab2_df.sv
-!i122 14
+!i122 39
 L0 1 36
 R5
 r1
 !s85 0
 31
-R9
+!s108 1725857420.000000
 !s107 C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/lab2_df.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/lab2_df.sv|
 !i113 1

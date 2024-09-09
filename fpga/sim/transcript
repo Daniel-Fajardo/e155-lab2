@@ -1,1 +1,11 @@
-# Compile of lab2_df.sv failed with 2 errors.
+# Compile of lab2_df.sv was successful.
+# Compile of leds.sv was successful.
+# Compile of segmentlogic.sv was successful.
+# Compile of chooseanode.sv was successful.
+# Compile of mux.sv was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.mux
+# vsim -gui work.mux 
+# Start time: 21:50:35 on Sep 08,2024
+# Loading sv_std.std
+# Loading work.mux
