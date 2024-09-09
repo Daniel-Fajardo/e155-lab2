@@ -3,5 +3,5 @@ module mux(
 	input logic state,
 	output logic [3:0] s
 );
-	assign s = state ? s2 : s1;
+	assign s = state ? s1 : s2;
 endmodule

@@ -6,6 +6,85 @@
 # 5 compiles, 0 failed with no errors.
 vsim -gui work.mux
 # vsim -gui work.mux 
-# Start time: 21:50:35 on Sep 08,2024
+# Start time: 10:53:32 on Sep 09,2024
 # Loading sv_std.std
 # Loading work.mux
+add wave -position end sim:/mux/*
+force s1 0000
+force s2 1111
+force state 1
+run 100
+# Load canceled
+vsim -gui work.chooseanode
+# End time: 10:58:34 on Sep 09,2024, Elapsed time: 0:05:02
+# Errors: 0, Warnings: 2
+# vsim -gui work.chooseanode 
+# Start time: 10:58:34 on Sep 09,2024
+# Loading sv_std.std
+# Loading work.chooseanode
+# Loading work.mux
+# Loading work.segmentlogic
+add wave -position end sim:/chooseanode/*
+force s1 0000
+force s2 1111
+force anode1 1
+force anode2 0
+force clk 1
+force reset 0
+run 100
+restart -f
+force s1 0000
+force s2 1111
+force reset 0
+force clk 1
+run 100
+force clk 1
+run 100
+force clk 0
+run 100
+force clk 1
+run 100
+force clk 0
+run 100
+force clk 1
+run 100
+vsim -gui work.segmentlogic
+# End time: 11:05:34 on Sep 09,2024, Elapsed time: 0:07:00
+# Errors: 0, Warnings: 1
+# vsim -gui work.segmentlogic 
+# Start time: 11:05:34 on Sep 09,2024
+# Loading sv_std.std
+# Loading work.segmentlogic
+# A time value could not be extracted from the current line
+# A time value could not be extracted from the current line
+# A time value could not be extracted from the current line
+add wave -position end sim:/segmentlogic/*
+force s 1111
+run 100
+force s 0000
+run 100
+# Compile of lab2_df.sv was successful.
+# Compile of leds.sv was successful.
+# Compile of segmentlogic.sv was successful.
+# Compile of chooseanode.sv was successful.
+# Compile of mux.sv was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.chooseanode
+# End time: 11:12:46 on Sep 09,2024, Elapsed time: 0:07:12
+# Errors: 0, Warnings: 2
+# vsim -gui work.chooseanode 
+# Start time: 11:12:46 on Sep 09,2024
+# Loading sv_std.std
+# Loading work.chooseanode
+# Loading work.mux
+# A time value could not be extracted from the current line
+add wave -position end sim:/chooseanode/*
+force clk 1
+force reset 0
+force s1 1111
+force s2 0000
+run 100
+force clk 0
+run 100
+force clk 1
+run 100

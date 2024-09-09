@@ -8,8 +8,9 @@ module top(
     	output logic anode2,
     	output logic [4:0] led
 );
-    logic state;
-    logic clk;
+	logic state;
+	logic clk;
+	logic [3:0] s;
 	logic int_osc;
 	logic pulse;
 	logic led_state = 0;
@@ -26,8 +27,9 @@ module top(
 		
 
 /*  switch inputs in binary to corresponding led outputs*/
-    leds leds(s1[3:0], s2[3:0], led[4:0]);
-    chooseanode chooseanode(clk, reset, s1, s2, anode1, anode2, seg);
+	leds leds(s1[3:0], s2[3:0], led[4:0]);
+	chooseanode chooseanode(clk, reset, s1[3:0], s2[3:0], anode1, anode2, s[3:0]);
+	segmentlogic segmentlogic1(s[3:0], seg[6:0]);
 
     assign clk = counter[10];
 //  assign led[2] = counter[10]; /* changed from 24 to 10*/
