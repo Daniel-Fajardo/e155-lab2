@@ -114,4 +114,4 @@ module chooseanode(
 	mux
 	segmentlogic segmentlogic1(s[3:0], seg[6:0]);
 	
-endmodule */
+endmodule
