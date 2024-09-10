@@ -2,6 +2,7 @@ module top(
 	input logic	mcu_blink_in,
 	input logic [3:0] s1,
     	input logic [3:0] s2,
+	input logic reset,
 	output logic mcu_echo_led,
     	output logic [6:0] seg,
     	output logic anode1,
@@ -17,21 +18,22 @@ module top(
 	logic [10:0] counter = 0; /* changed from 24 to 10, should change freq from 1 to 2.4 Hz*/
 	
 	// Internal high-speed oscillator
-	HSOSC hf_osc (.CLKHFPU(1'b1), .CLKHFEN(1'b1), .CLKHF(int_osc));
+//	HSOSC hf_osc (.CLKHFPU(1'b1), .CLKHFEN(1'b1), .CLKHF(int_osc));
 	
 	// Simple clock divider
-	always_ff @(posedge int_osc)
+/*	always_ff @(posedge int_osc)
 		begin
 			counter <= counter + 1;
 		end
-		
+		*/
 
 /*  switch inputs in binary to corresponding led outputs*/
-    leds leds(s1[3:0], s2[3:0], led[4:0]);
-    chooseanode chooseanode(clk, reset, s1[3:0], s2[3:0], anode1, anode2, s[3:0]);
+	clockdivider clockdivider(reset, clk, counter[10:0]);
+	leds leds(s1[3:0], s2[3:0], led[4:0]);
+	chooseanode chooseanode(clk, reset, s1[3:0], s2[3:0], anode1, anode2, s[3:0]);
 	segmentlogic segmentlogic1(s[3:0], seg[6:0]);
 
-    assign clk = counter[10];
+/*    assign clk = counter[10];*/
 //  assign led[2] = counter[10]; /* changed from 24 to 10*/
 // 	assign mcu_echo_led = mcu_blink_in;
 

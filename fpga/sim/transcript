@@ -88,3 +88,12 @@ force clk 0
 run 100
 force clk 1
 run 100
+# Compile of lab2_df.sv was successful.
+# Compile of leds.sv was successful.
+# Compile of segmentlogic.sv was successful.
+# Compile of chooseanode.sv was successful.
+# Compile of mux.sv was successful.
+# 5 compiles, 0 failed with no errors.
+# Load canceled
+# End time: 16:03:35 on Sep 09,2024, Elapsed time: 4:50:49
+# Errors: 0, Warnings: 2
