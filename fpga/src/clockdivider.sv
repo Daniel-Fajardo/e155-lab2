@@ -1,7 +1,7 @@
 module clockdivider(
 	input logic reset,
 	output logic clk,
-	output logic [10:0] counter
+	output logic [18:0] counter
 );
 	logic int_osc;
 
@@ -10,8 +10,8 @@ module clockdivider(
 	
 	// Simple clock divider
 	always_ff @(posedge int_osc) begin
-		if (reset==0) 	counter = 0;
-		else 		counter = counter + 1;
+		if (!reset) 	counter <= 0;
+		else 		counter <= counter + 1;
 		end
-	assign clk = counter[10];
+	assign clk = counter[18];
 endmodule

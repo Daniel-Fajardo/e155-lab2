@@ -5,13 +5,6 @@ Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 Top level modules:
 	leds
 
-} {} {}} C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/chooseanode.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/chooseanode.sv
-Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
--- Compiling module chooseanode
-
-Top level modules:
-	chooseanode
-
 } {} {}} C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/segmentlogic.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/segmentlogic.sv
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling module segmentlogic
@@ -19,18 +12,18 @@ Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 Top level modules:
 	segmentlogic
 
-} {} {}} C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/lab2_df.sv {1 {vlog -work work -vopt -sv -stats=none {C:\Users\danie\OneDrive\Documents\MicroP\Lab2\fpga\src\lab2_df.sv}
-Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
--- Compiling module top
-
-Top level modules:
-	top
-
 } {} {}} C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/mux.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/mux.sv
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling module mux
 
 Top level modules:
 	mux
+
+} {} {}} C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/lab2_df.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/lab2_df.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module top
+
+Top level modules:
+	top
 
 } {} {}}

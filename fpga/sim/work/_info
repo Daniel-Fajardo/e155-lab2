@@ -1,22 +1,24 @@
 m255
 K4
 z2
-Z0 !s12c _opt
-Z1 !s99 nomlopt
+!s12c _opt2
+Z0 !s99 nomlopt
+Z1 !s12c _opt
+R0
 Z2 !s12c _opt1
-R1
 R0
 R1
 R0
 R1
+R0
 R2
-R1
+R0
 R2
-R1
+R0
 R2
-R1
 R0
 R1
+R0
 !s11f MIXED_VERSIONS
 13
 !s112 1.1
@@ -28,179 +30,194 @@ Z3 dC:/Program Files/Modelsim/examples
 T_opt
 !s110 1725938356
 VLCRkHMA>Zmg5BT2oo?aN`3
-04 3 4 work top fast 0
+Z4 04 3 4 work top fast 0
 =1-f09e4a0dfef3-66dfbab3-355-5c94
-R1
-!s12f OEM25U5 
-Z4 !s12b OEM100
-Z5 !s124 OEM100
-Z6 !s135 nogc
-Z7 o-quiet -auto_acc_if_foreign -work work -L iCE40UP
-Z8 tCvgOpt 0
+R0
+Z5 !s12f OEM25U5 
+Z6 !s12b OEM100
+Z7 !s124 OEM100
+Z8 !s135 nogc
+Z9 o-quiet -auto_acc_if_foreign -work work -L iCE40UP
+Z10 tCvgOpt 0
 n@_opt
-Z9 OL;O;2024.2;79
+Z11 OL;O;2024.2;79
+R3
 T_opt1
 !s110 1725938256
 VDgOV6miljQd:Mb`iLg<4Q3
 04 12 4 work clockdivider fast 0
 =1-f09e4a0dfef3-66dfba4f-335-8bf4
-R1
+R0
 !s12f OEM25U1 
+R6
+R7
+R8
+R9
+R10
+n@_opt1
+R11
+R3
+T_opt2
+!s110 1726012024
+V^bz2P5M:D2m4h?h[mA00k1
 R4
+=1-f09e4a0dfef3-66e0da77-37d-22d4
+R0
 R5
 R6
 R7
 R8
-n@_opt1
 R9
-R3
+R10
+n@_opt2
+R11
 vchooseanode
 2C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/chooseanode.sv
-Z10 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z11 !s110 1725938244
+Z12 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z13 !s110 1726011982
 !i10b 1
-!s100 I]9U8GF6dJQK@WdF3l^;j2
-IS[9Kb=eN4@RC6:J?9HOGg1
+!s100 liOC0MPe7>NRZza4a[8o00
+IF8P`@dBcUbWC]>iCdFQP53
 S1
-Z12 dC:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/sim
-w1725905371
+Z14 dC:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/sim
+w1726010990
 8C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/chooseanode.sv
 FC:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/chooseanode.sv
-!i122 115
+!i122 121
 L0 1 26
-Z13 VDg1SIo80bB@j0V0VzS_@n1
-Z14 OL;L;2024.2;79
+Z15 VDg1SIo80bB@j0V0VzS_@n1
+Z16 OL;L;2024.2;79
 r1
 !s85 0
 31
-Z15 !s108 1725938244.000000
+Z17 !s108 1726011981.000000
 !s107 C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/chooseanode.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/chooseanode.sv|
 !i113 0
-Z16 o-work work -sv
-R8
+Z18 o-work work -sv
+R10
 vclockdivider
 2C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/clockdivider.sv
-R10
-R11
-!i10b 1
-!s100 GEIKI5336D<jo;=ng;QbH0
-Io9@X0=PeoN`oUV21S:`FB3
-S1
 R12
-w1725938240
+R13
+!i10b 1
+!s100 M5o]0ek@c0VO>SGC0Xj^h3
+In`;GOgK4JLG3X3U97_jeP3
+S1
+R14
+w1725986529
 8C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/clockdivider.sv
 FC:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/clockdivider.sv
-!i122 117
+!i122 123
 L0 1 17
-R13
-R14
+R15
+R16
 r1
 !s85 0
 31
-R15
+Z19 !s108 1726011982.000000
 !s107 C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/clockdivider.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/clockdivider.sv|
 !i113 0
-R16
-R8
+R18
+R10
 vleds
 2C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/leds.sv
-R10
-Z17 !s110 1725938243
+R12
+Z20 !s110 1726011981
 !i10b 1
 !s100 _aRI0C?A52ZjTMkUYQUBD2
 I9>NT15_ba4O=^f>KiO6[T2
 S1
-R12
+R14
 w1725854305
 8C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/leds.sv
 FC:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/leds.sv
-!i122 113
+!i122 119
 L0 1 24
-R13
-R14
+R15
+R16
 r1
 !s85 0
 31
-Z18 !s108 1725938243.000000
+R17
 !s107 C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/leds.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/leds.sv|
 !i113 0
-R16
-R8
+R18
+R10
 vmux
 2C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/mux.sv
-R10
-R11
+R12
+R13
 !i10b 1
 !s100 TbX[MmS7KP8h<dZC=>8Jz0
 I1?OOZJA;e47fhai5@X;<J2
 S1
-R12
-w1725905654
+R14
+w1726010164
 8C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/mux.sv
 FC:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/mux.sv
-!i122 116
+!i122 122
 L0 1 7
-R13
-R14
+R15
+R16
 r1
 !s85 0
 31
-R15
+R19
 !s107 C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/mux.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/mux.sv|
 !i113 0
-R16
-R8
+R18
+R10
 vsegmentlogic
 2C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/segmentlogic.sv
-R10
-R11
+R12
+R20
 !i10b 1
 !s100 oU2i11cKQz_zX9]J>;1Ti1
 IgEcUi^:PEFi9I0GIV;X770
 S1
-R12
+R14
 w1725854267
 8C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/segmentlogic.sv
 FC:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/segmentlogic.sv
-!i122 114
+!i122 120
 L0 1 27
-R13
-R14
+R15
+R16
 r1
 !s85 0
 31
-R18
+R17
 !s107 C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/segmentlogic.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/segmentlogic.sv|
 !i113 0
-R16
-R8
-vtop
-2C:\Users\danie\OneDrive\Documents\MicroP\Lab2\fpga\src\lab2_df.sv
+R18
 R10
-R17
-!i10b 1
-!s100 5U`KXNe3ocYKzXVja8lc`0
-I8X<]WES65=M0k9A`o9bXK3
-S1
+vtop
+2C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/lab2_df.sv
 R12
-w1725936909
-8C:\Users\danie\OneDrive\Documents\MicroP\Lab2\fpga\src\lab2_df.sv
-FC:\Users\danie\OneDrive\Documents\MicroP\Lab2\fpga\src\lab2_df.sv
-!i122 112
-L0 1 38
-R13
+R20
+!i10b 1
+!s100 ?nlfV>VZPEWNh3AnJdTP62
+I:F@9U10<[Ge2I1D6LZXd?1
+S1
 R14
+w1725986567
+8C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/lab2_df.sv
+FC:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/lab2_df.sv
+!i122 118
+L0 1 38
+R15
+R16
 r1
 !s85 0
 31
-R18
-!s107 C:\\Users\\danie\\OneDrive\\Documents\\MicroP\\Lab2\\fpga\\src\\lab2_df.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:\Users\danie\OneDrive\Documents\MicroP\Lab2\fpga\src\lab2_df.sv|
+R17
+!s107 C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/lab2_df.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/lab2_df.sv|
 !i113 0
-R16
-R8
+R18
+R10
