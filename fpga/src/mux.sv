@@ -1,7 +1,7 @@
 module mux(
 	input logic [3:0] s1, s2, 
 	input logic state,
-	output logic [3:0] n
+	output logic [3:0] s
 );
-	assign seg = state ? s1 : s2;
+	assign s = state ? s2 : s1;
 endmodule

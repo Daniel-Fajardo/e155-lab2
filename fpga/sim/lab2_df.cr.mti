@@ -1,23 +1,29 @@
-C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/leds.sv {1 {vlog -work work -sv -stats=none C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/leds.sv
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/leds.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/leds.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling module leds
 
 Top level modules:
 	leds
 
-} {} {}} C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/segmentlogic.sv {1 {vlog -work work -sv -stats=none C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/segmentlogic.sv
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+} {} {}} C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/segmentlogic.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/segmentlogic.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling module segmentlogic
 
 Top level modules:
 	segmentlogic
 
-} {} {}} C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/lab2_df.sv {0 {vlog -work work -sv -stats=none C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/lab2_df.sv
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module top
--- Compiling module segmentlogic
--- Compiling module leds
--- Compiling module chooseanode
-** Error: (vlog-13069) C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/lab2_df.sv(115): near "segmentlogic1": syntax error, unexpected IDENTIFIER, expecting ';'.
+} {} {}} C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/mux.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/mux.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module mux
 
-} {7.0 8.0} {}}
+Top level modules:
+	mux
+
+} {} {}} C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/lab2_df.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/danie/OneDrive/Documents/MicroP/Lab2/fpga/src/lab2_df.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module top
+
+Top level modules:
+	top
+
+} {} {}}
