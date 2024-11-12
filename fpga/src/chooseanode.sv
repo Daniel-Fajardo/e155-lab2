@@ -1,3 +1,8 @@
+// Daniel Fajardo
+// dfajardo@g.hmc.edu
+// 09/17/2024
+//
+// module for alternating output for each display to only show one digit at a time
 module chooseanode(
     	input logic clk, reset,
 		input logic [3:0] s1, s2,

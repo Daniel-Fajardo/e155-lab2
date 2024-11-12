@@ -1,3 +1,8 @@
+// Daniel Fajardo
+// dfajardo@g.hmc.edu
+// 09/17/2024
+//
+// clock divider module
 module clockdivider(
 	input logic reset,
 	output logic clk,

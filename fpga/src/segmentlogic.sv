@@ -1,8 +1,12 @@
+// Daniel Fajardo
+// dfajardo@g.hmc.edu
+// 09/17/2024
+//
+// combinational logic for 7-segment display
 module segmentlogic(
     	input logic [3:0] s,
     	output logic [6:0] seg
 );
-    // combinational logic for 7-segment display
     always_comb begin
         case(s)
             4'b0000: seg=7'b0000001;

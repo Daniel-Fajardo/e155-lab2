@@ -1,10 +1,14 @@
+// Daniel Fajardo
+// dfajardo@g.hmc.edu
+// 09/17/2024
+//
+// 4-bit adder combinational logic for leds
 module leds(
     	input logic [3:0] s1,
     	input logic [3:0] s2,
     	output logic [4:0] led
 );
     logic [3:0] c;
-    // 4-bit adder combinational logic for leds
     always_comb begin
         // sum first bits
         led[0] = ~(s1[0]^s2[0]);
